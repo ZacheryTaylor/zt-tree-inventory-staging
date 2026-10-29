@@ -1,0 +1,307 @@
+{
+ "app": "zt-tree-inventory",
+ "format": 2,
+ "version": "1.0.1",
+ "exported": "2026-10-22T09:45:00-05:00",
+ "job": {
+  "id": 1,
+  "name": "SAMPLE - Bristol Park (fake trees)",
+  "client": "Sample Engineering Co. (fake)",
+  "site": "Escambia County, FL (sample)",
+  "parcels": "03-1S-31-1500-001-003",
+  "jurisdiction": "ESC",
+  "srLoc": "S",
+  "date": "2026-10-22",
+  "crew": "ZT",
+  "notes": "Sample data, not a real job",
+  "crs": "EPSG:2238",
+  "start": 1000,
+  "elev": "zero",
+  "accLimit": 30,
+  "nRead": 10,
+  "wait": 45
+ },
+ "parcelGeo": {
+  "features": [
+   {
+    "type": "Feature",
+    "geometry": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        -87.33294168629023,
+        30.54530465461274
+       ],
+       [
+        -87.33352498368298,
+        30.545719680219825
+       ],
+       [
+        -87.3335990033511,
+        30.545692048242007
+       ],
+       [
+        -87.33373062426809,
+        30.54564430914399
+       ],
+       [
+        -87.333841660273,
+        30.545603856113996
+       ],
+       [
+        -87.33318443557359,
+        30.545105513844018
+       ],
+       [
+        -87.33313177431424,
+        30.54506558524121
+       ],
+       [
+        -87.33299877563472,
+        30.5449664955032
+       ],
+       [
+        -87.33296175413362,
+        30.544967844086408
+       ],
+       [
+        -87.33289473027551,
+        30.544956051306468
+       ],
+       [
+        -87.33284255799119,
+        30.544956674533886
+       ],
+       [
+        -87.3327835355545,
+        30.54494205403155
+       ],
+       [
+        -87.33272433918349,
+        30.544931723313702
+       ],
+       [
+        -87.33267935969127,
+        30.544939008875136
+       ],
+       [
+        -87.33264017835346,
+        30.544924969460876
+       ],
+       [
+        -87.33260057955758,
+        30.544921662308344
+       ],
+       [
+        -87.33254428502897,
+        30.544900673032032
+       ],
+       [
+        -87.33249930543408,
+        30.544907954924952
+       ],
+       [
+        -87.33245507639965,
+        30.54489591620397
+       ],
+       [
+        -87.33243206417332,
+        30.544893996482596
+       ],
+       [
+        -87.33241547556378,
+        30.544892609942377
+       ],
+       [
+        -87.33240127238508,
+        30.544891773952756
+       ],
+       [
+        -87.33235782858665,
+        30.54488922075313
+       ],
+       [
+        -87.33244784232292,
+        30.54495328945669
+       ],
+       [
+        -87.33294168629023,
+        30.54530465461274
+       ]
+      ]
+     ]
+    },
+    "properties": {
+     "REFERENCE": "031S311500001003",
+     "SITEADDR": "10100 BRISTOL PARK RD",
+     "OWNER": "ESCAMBIA COUNTY"
+    }
+   }
+  ],
+  "retrieved": "10/17/2026 (test fixture)",
+  "source": "Escambia County Property Appraiser (parcels); source acknowledgment: Escambia County IMAGiNE GIS",
+  "idField": "REFNUM"
+ },
+ "trees": [
+  {
+   "id": 1,
+   "jobId": 1,
+   "pos_src": "gps",
+   "tag": "101",
+   "species": "Southern live oak",
+   "dbh_in": 32,
+   "canopy_ft": 30,
+   "condition": "Good",
+   "protected": "Y",
+   "heritage": "Y",
+   "ph_type": "Heritage",
+   "notes": "FAKE sample tree",
+   "wet": "N",
+   "prev": "N",
+   "ms": "N",
+   "champ": "N",
+   "can_pct": 10,
+   "root_pct": 20,
+   "sci": "Quercus virginiana",
+   "point_no": 1000,
+   "lat": 30.54534953483793,
+   "lon": -87.33307668238764,
+   "northing": 573087.5257303398,
+   "easting": 1076736.7794628544,
+   "elev_ft": 0,
+   "acc_ft": 14.2,
+   "n_readings": 10,
+   "spread_ft": 4.733333333333333,
+   "crs": "EPSG:2238",
+   "captured": "10/17/2026, 9:00:00 AM",
+   "photo_name": "Tag_101.jpg"
+  },
+  {
+   "id": 2,
+   "jobId": 1,
+   "pos_src": "gps",
+   "tag": "102",
+   "species": "Longleaf pine",
+   "dbh_in": 14,
+   "canopy_ft": 12,
+   "condition": "Good",
+   "protected": "N",
+   "heritage": "N",
+   "notes": "FAKE sample tree",
+   "sci": "Pinus palustris",
+   "point_no": 1001,
+   "lat": 30.54540039909314,
+   "lon": -87.33322967796471,
+   "northing": 573107.2164218277,
+   "easting": 1076689.0908530192,
+   "elev_ft": 0,
+   "acc_ft": 18.7,
+   "n_readings": 10,
+   "spread_ft": 6.233333333333333,
+   "crs": "EPSG:2238",
+   "captured": "10/17/2026, 9:01:00 AM",
+   "photo_name": ""
+  },
+  {
+   "id": 3,
+   "jobId": 1,
+   "pos_src": "gps",
+   "tag": "103",
+   "species": "Laurel oak",
+   "dbh_in": 22.5,
+   "stems": "18, 13.5",
+   "canopy_ft": 22,
+   "condition": "Fair",
+   "protected": "Y",
+   "heritage": "N",
+   "notes": "FAKE, co-dominant stems",
+   "sci": "Quercus laurifolia",
+   "point_no": 1002,
+   "lat": 30.545454255363367,
+   "lon": -87.33339167328161,
+   "northing": 573128.065458637,
+   "easting": 1076638.597086701,
+   "elev_ft": 0,
+   "acc_ft": 22.4,
+   "n_readings": 10,
+   "spread_ft": 7.466666666666666,
+   "crs": "EPSG:2238",
+   "captured": "10/17/2026, 9:02:00 AM",
+   "photo_name": ""
+  },
+  {
+   "id": 4,
+   "jobId": 1,
+   "pos_src": "manual",
+   "tag": "104",
+   "species": "Southern magnolia",
+   "dbh_in": 11,
+   "canopy_ft": 10,
+   "condition": "Good",
+   "protected": "Y",
+   "heritage": "N",
+   "notes": "FAKE sample tree, position typed in (manual)",
+   "sci": "Magnolia grandiflora",
+   "point_no": 1003,
+   "lat": 30.545508111633595,
+   "lon": -87.33355366859851,
+   "northing": 573148.9145667742,
+   "easting": 1076588.1033778305,
+   "elev_ft": 0,
+   "acc_ft": null,
+   "n_readings": 1,
+   "spread_ft": null,
+   "crs": "EPSG:2238",
+   "captured": "10/17/2026, 9:03:00 AM",
+   "photo_name": ""
+  },
+  {
+   "id": 5,
+   "jobId": 1,
+   "pos_src": "gps",
+   "tag": "105",
+   "species": "Sweet bay (field ID, unlisted)",
+   "dbh_in": 8,
+   "canopy_ft": 8,
+   "condition": "Poor",
+   "protected": "N",
+   "heritage": "N",
+   "notes": "FAKE, free-text species, \"quoted\", comma, test",
+   "sci": "",
+   "point_no": 1004,
+   "lat": 30.545558975888806,
+   "lon": -87.33370666417558,
+   "northing": 573168.6054566259,
+   "easting": 1076540.4149277655,
+   "elev_ft": 0,
+   "acc_ft": 27.9,
+   "n_readings": 10,
+   "spread_ft": 9.299999999999999,
+   "crs": "EPSG:2238",
+   "captured": "10/17/2026, 9:04:00 AM",
+   "photo_name": ""
+  }
+ ],
+ "checks": [
+  {
+   "name": "Parcel corner (FAKE)",
+   "crs": "EPSG:2238",
+   "kN": 573070.151643647,
+   "kE": 1076778.8576905564,
+   "cN": 573078.6516434657,
+   "cE": 1076787.3576905509,
+   "cLat": 30.545328598426345,
+   "cLon": -87.33291536426286,
+   "dN": 8.499999818741344,
+   "dE": 8.499999994412065,
+   "horiz": 12.020815148050817,
+   "acc_ft": 15.2,
+   "n": 10,
+   "spread_ft": 4.1,
+   "source": "County GIS vertex (sample only)",
+   "captured": "10/22/2026, 9:30:00 AM"
+  }
+ ],
+ "photos": {}
+}

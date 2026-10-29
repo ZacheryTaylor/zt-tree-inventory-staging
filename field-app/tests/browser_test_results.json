@@ -1,0 +1,799 @@
+{
+  "run": "Thu Oct 22 2026 23:01:39 GMT-0500 (Central Daylight Time)",
+  "version": "1.0.1",
+  "checks": [
+    {
+      "name": "product name consistent (core, manifest, title, header)",
+      "pass": true,
+      "detail": {
+        "manifest": "ZT Tree Inventory",
+        "core": "ZT Tree Inventory"
+      }
+    },
+    {
+      "name": "footer: disclaimer + arborist note + exact branding + v1.0.1",
+      "pass": true,
+      "detail": "Tool, not engineering or surveying advice. Not survey grade and not a substitute for a licensed surveyor or engineer; the client's licensed surveyor locates the tags. Tree condition and risk determinations require an ISA Certified Arborist; condition entries here are visual field notes only. Prepared by Zach Taylor, EI (Engineer Intern), ZT, LLC. ZT Tree Inventory v1.0.1."
+    },
+    {
+      "name": "banner: Not a survey label",
+      "pass": true,
+      "detail": "Locations approximate, for field reference only. Not a survey. Phone GPS: expect ~10–30 ft error."
+    },
+    {
+      "name": "first job created, default CRS EPSG:2238",
+      "pass": true
+    },
+    {
+      "name": "no Job tab; tabs are Capture/Trees/Check/Export/More",
+      "pass": true,
+      "detail": [
+        "capture",
+        "trees",
+        "check",
+        "export",
+        "more"
+      ]
+    },
+    {
+      "name": "opens straight on Capture with an auto-named current job, no prompt",
+      "pass": true,
+      "detail": "Job 2026-10-22"
+    },
+    {
+      "name": "tag 1 prefilled",
+      "pass": true
+    },
+    {
+      "name": "bottom bar visible on Capture",
+      "pass": true
+    },
+    {
+      "name": "no Proposed action field in the capture form",
+      "pass": true
+    },
+    {
+      "name": "touch targets >= 44 px on Capture",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "job chip opens the details sheet (edit mode, no Skip)",
+      "pass": true
+    },
+    {
+      "name": "auto name adds jurisdiction",
+      "pass": true,
+      "detail": "Job 2026-10-22 Escambia"
+    },
+    {
+      "name": "auto name prefers first parcel ID",
+      "pass": true,
+      "detail": "Job 2026-10-22 03-1S-31-1500-001-003"
+    },
+    {
+      "name": "sheet Done closes and saves (ESC, 6 readings, client still blank)",
+      "pass": true,
+      "detail": {
+        "name": "Job 2026-10-22 03-1S-31-1500-001-003",
+        "autoName": true,
+        "client": "",
+        "site": "",
+        "parcels": "03-1S-31-1500-001-003",
+        "jurisdiction": "ESC",
+        "srLoc": "S",
+        "date": "2026-10-22",
+        "crew": "",
+        "notes": "",
+        "crs": "EPSG:2238",
+        "start": 1000,
+        "elev": "zero",
+        "accLimit": 30,
+        "nRead": 6,
+        "wait": 20,
+        "archived": false,
+        "created": "2026-10-23T04:01:40.874Z",
+        "id": 2,
+        "lastOpened": "2026-10-23T04:01:40.875Z",
+        "updated": "2026-10-23T04:01:42.385Z"
+      }
+    },
+    {
+      "name": "tree 1: averaged 6 readings",
+      "pass": true,
+      "detail": [
+        6,
+        "Averaged 6 readings."
+      ]
+    },
+    {
+      "name": "live accuracy readout in bar",
+      "pass": true,
+      "detail": "±13 ft"
+    },
+    {
+      "name": "suggestion: ESC live oak 32 in -> protected Y (auto-set)",
+      "pass": true,
+      "detail": "Suggested, field judgement: protected Y, heritage N. ESC: protected at 12 in, heritage at 60 in (DSM 2-3.1(a),(d)). Non-heritage trees on single-family/two-family lots are exempt (2-1.1(e))."
+    },
+    {
+      "name": "manual heritage override marked",
+      "pass": true
+    },
+    {
+      "name": "tree 1 saved (toast with Undo)",
+      "pass": true,
+      "detail": [
+        "Saved tag 101",
+        ""
+      ]
+    },
+    {
+      "name": "tree 2: averaged 6 readings",
+      "pass": true,
+      "detail": [
+        6,
+        "Averaged 6 readings."
+      ]
+    },
+    {
+      "name": "tag auto-increment -> 102",
+      "pass": true,
+      "detail": "102"
+    },
+    {
+      "name": "suggestion: ESC longleaf pine exempt -> N",
+      "pass": true,
+      "detail": "Suggested, field judgement: protected N, heritage N. ESC: protected at 12 in, heritage at 60 in (DSM 2-3.1(a),(d)). Exempt species: Pine (Pinus sp.) (DSM 2-1.1). Non-heritage trees on single-family/two-family lots are exempt (2-1.1(e))."
+    },
+    {
+      "name": "tree 2 saved (toast with Undo)",
+      "pass": true,
+      "detail": [
+        "Saved tag 102",
+        ""
+      ]
+    },
+    {
+      "name": "tree 3: averaged 6 readings",
+      "pass": true,
+      "detail": [
+        6,
+        "Averaged 6 readings."
+      ]
+    },
+    {
+      "name": "tag auto-increment -> 103",
+      "pass": true,
+      "detail": "103"
+    },
+    {
+      "name": "multi-trunk combined DBH = 22.5",
+      "pass": true,
+      "detail": "22.5"
+    },
+    {
+      "name": "tree 3 saved (toast with Undo)",
+      "pass": true,
+      "detail": [
+        "Saved tag 103",
+        ""
+      ]
+    },
+    {
+      "name": "manual fix shows \"manual\" accuracy",
+      "pass": true
+    },
+    {
+      "name": "tag auto-increment -> 104",
+      "pass": true,
+      "detail": "104"
+    },
+    {
+      "name": "tree 4 saved (toast with Undo)",
+      "pass": true,
+      "detail": [
+        "Saved tag 104",
+        ""
+      ]
+    },
+    {
+      "name": "tree 5: averaged 6 readings",
+      "pass": true,
+      "detail": [
+        6,
+        "Averaged 6 readings."
+      ]
+    },
+    {
+      "name": "tag auto-increment -> 105",
+      "pass": true,
+      "detail": "105"
+    },
+    {
+      "name": "unlisted species warning",
+      "pass": true,
+      "detail": "Not in the calculator list: exports map it to \"Other / unlisted species\". Did you mean Sweetgum?"
+    },
+    {
+      "name": "tree 5 saved (toast with Undo)",
+      "pass": true,
+      "detail": [
+        "Saved tag 105",
+        ""
+      ]
+    },
+    {
+      "name": "5 trees saved",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "GPS trees store n_readings = 6, manual = accuracy null",
+      "pass": true
+    },
+    {
+      "name": "averaged positions within 10 ft of truth",
+      "pass": true
+    },
+    {
+      "name": "mitigation + photo saved on tag 101",
+      "pass": true
+    },
+    {
+      "name": "duplicate-tag warning shown",
+      "pass": true
+    },
+    {
+      "name": "duplicate tag blocks save",
+      "pass": true,
+      "detail": "Tag # 101 already used in this job"
+    },
+    {
+      "name": "hard accuracy warning visible above 30 ft",
+      "pass": true,
+      "detail": "Accuracy ±48 ft is worse than this job's 30 ft limit."
+    },
+    {
+      "name": "poor accuracy blocks save without reason",
+      "pass": true
+    },
+    {
+      "name": "save anyway with reason flags tree",
+      "pass": true,
+      "detail": "dense canopy, re-shoot later"
+    },
+    {
+      "name": "undo removes the just-saved tree",
+      "pass": true
+    },
+    {
+      "name": "legacy tree with action loads (6 trees, no page errors)",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Trees list does not show the legacy action",
+      "pass": true,
+      "detail": "101Southern live oak 32 in\n        Pt 1000 · Good · photo\n        PH±13 ft102Longleaf pine 14 in\n        Pt 1001 · Good\n        ±16 ft103Laurel oak 22.5 in\n        Pt 1002 · Good\n        P±20 ft104Southern magnolia 11 in\n        Pt 1003 · Fair\n        !man.105Sweet bay 8 in\n        Pt 1004 · Good\n        ±25 ft106Water oak 12 in\n        Pt 1005 · Good\n        P!±51 ft"
+    },
+    {
+      "name": "Trees list shows 6 with flags",
+      "pass": true
+    },
+    {
+      "name": "edit opens on Capture with Keep/Use-new toggle (keep default)",
+      "pass": true
+    },
+    {
+      "name": "edit title scrolled below sticky header",
+      "pass": true,
+      "detail": {
+        "titleTop": 154.859375,
+        "hdrBottom": 135
+      }
+    },
+    {
+      "name": "edit with Keep keeps position, updates DBH",
+      "pass": true,
+      "detail": {
+        "dbh": 15
+      }
+    },
+    {
+      "name": "saving a legacy tree drops the old action value",
+      "pass": true
+    },
+    {
+      "name": "undo of edit restores DBH 14",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "edit with \"Use new GPS fix\" moves the tree",
+      "pass": true,
+      "detail": 30.546005806746884
+    },
+    {
+      "name": "delete removes tree",
+      "pass": true
+    },
+    {
+      "name": "undo restores deleted tree (same id, position)",
+      "pass": true
+    },
+    {
+      "name": "permission denied card shown",
+      "pass": true
+    },
+    {
+      "name": "accuracy check (lat/lon): ~18.2 ft offset, PASS",
+      "pass": true,
+      "detail": {
+        "off1": 18.2,
+        "r": "PASS: horizontal offset 18.2 ft (dN 18.2, dE 0.5); phone reported ±15 ft over 6 readings."
+      }
+    },
+    {
+      "name": "accuracy check (N/E): offset matches proj4 within 0.5 ft and FAILs > 30 ft",
+      "pass": true,
+      "detail": {
+        "off2": 48.14,
+        "exp2": 48.102304788720765
+      }
+    },
+    {
+      "name": "checks listed",
+      "pass": true
+    },
+    {
+      "name": "first export offers the details sheet once (prefilled, skippable)",
+      "pass": true,
+      "detail": "Add job details for the export? (optional)"
+    },
+    {
+      "name": "details saved from the export sheet; report continued",
+      "pass": true,
+      "detail": "SAMPLE - Bristol Park (fake trees)"
+    },
+    {
+      "name": "job chip shows job name",
+      "pass": true
+    },
+    {
+      "name": "details sheet not shown again for later exports",
+      "pass": true
+    },
+    {
+      "name": "all exports downloaded (report, PNEZD+NOTES, log csv/xlsx, photos zip, backup, all zip)",
+      "pass": true,
+      "detail": [
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1.csv",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1_NOTES.txt",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_Tree_Inventory_Report.pdf",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_all.zip",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_job_backup.json",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_photos.zip",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.csv",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.xlsx"
+      ]
+    },
+    {
+      "name": "PNEZD 6 rows x 5 cols, no header",
+      "pass": true,
+      "detail": [
+        "1000,573089.716,1076737.467,0.00,T101 Southern live oak 32in",
+        "1001,573110.786,1076690.728,0.00,T102 Longleaf pine 14in",
+        "1002,573130.053,1076639.148,0.00,T103 Laurel oak 22.5in",
+        "1003,573148.890,1076590.392,0.00,T104 Southern magnolia 11in",
+        "1004,573170.032,1076543.842,0.00,T105 Sweet bay 8in",
+        "1005,573074.205,1076697.231,0.00,T106 Water oak 12in"
+      ]
+    },
+    {
+      "name": "PNEZD notes: product, client, disclaimer, branding",
+      "pass": true
+    },
+    {
+      "name": "tree log has no Proposed action column/value",
+      "pass": true
+    },
+    {
+      "name": "tree log: manual label + accuracy flag + suggestion columns",
+      "pass": true
+    },
+    {
+      "name": "XLSX sheets incl. Accuracy checks",
+      "pass": true,
+      "detail": [
+        "Tree Log",
+        "Calculator paste",
+        "PNEZD",
+        "About",
+        "Accuracy checks"
+      ]
+    },
+    {
+      "name": "calc paste keeps blank Proposed action column + note",
+      "pass": true,
+      "detail": "Paste rows below the header into the Tree Protection & Mitigation Calculator > Tree Inventory (row 7+). Unlisted species map to \"Other / unlisted species\". Blank Y/N cells are treated by the calculator as not \"Y\" and blank % as 0, so fill them in before relying on results. The \"Proposed action\" column is intentionally blank: this app does not record proposed actions; the column is kept only so the paste lines up column-for-column with the calculator's 13 inputs (enter actions in the calculator if needed)."
+    },
+    {
+      "name": "Tree Log sheet has no Proposed action",
+      "pass": true
+    },
+    {
+      "name": "calc paste row 1 G-L filled",
+      "pass": true,
+      "detail": [
+        "101",
+        "Southern live oak",
+        32,
+        30,
+        "Good",
+        "",
+        "N",
+        "N",
+        "N",
+        "N",
+        10,
+        20,
+        "FAKE sample tree"
+      ]
+    },
+    {
+      "name": "zip valid: photos.zip",
+      "pass": true,
+      "detail": [
+        "None",
+        "Tag_101.jpg"
+      ]
+    },
+    {
+      "name": "zip valid: all.zip",
+      "pass": true,
+      "detail": [
+        "None",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1.csv",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1_NOTES.txt",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.csv",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.xlsx",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_job_backup.json",
+        "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_Tree_Inventory_Report.pdf",
+        "photos/Tag_101.jpg"
+      ]
+    },
+    {
+      "name": "backup: job + 6 trees + 2 checks + photo, no action field",
+      "pass": true
+    },
+    {
+      "name": "report PDF contains cover/summary/table/accuracy/sources/limitations",
+      "pass": true,
+      "detail": {
+        "miss": [],
+        "pages": 6
+      }
+    },
+    {
+      "name": "banned-wording scan: report PDF",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "report has no Proposed action / Action column",
+      "pass": true
+    },
+    {
+      "name": "banned-wording scan: screen capture",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "banned-wording scan: screen trees",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "banned-wording scan: screen check",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "banned-wording scan: screen export",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "banned-wording scan: screen more",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "More has accuracy, legal limits, sources, version",
+      "pass": true
+    },
+    {
+      "name": "job marked exported",
+      "pass": true
+    },
+    {
+      "name": "finish (after export): confirm without export reminder",
+      "pass": true,
+      "detail": [
+        "Nothing has been exported from \"Job 2026-10-22 Escambia\" yet.\n\nTap Cancel and export first (Everything .zip is the safest), or OK to finish anyway. It moves to More › Past jobs with all its data.",
+        "Reopen \"SAMPLE - Bristol Park (fake trees)\" as the current job? \"Job 2026-10-22 Escambia\" moves to Past jobs.",
+        "Delete \"Job 2026-10-22 Escambia\" and its 0 trees from this device? It was never exported. This cannot be undone."
+      ]
+    },
+    {
+      "name": "finish starts a fresh current job on Capture (empty, tag 1, carries ESC)",
+      "pass": true,
+      "detail": "Job 2026-10-22 Escambia"
+    },
+    {
+      "name": "finished job listed under Past jobs",
+      "pass": true
+    },
+    {
+      "name": "finish without any export reminds to export first",
+      "pass": true,
+      "detail": [
+        "Nothing has been exported from \"Job 2026-10-22 Escambia\" yet.\n\nTap Cancel and export first (Everything .zip is the safest), or OK to finish anyway. It moves to More › Past jobs with all its data.",
+        "Reopen \"SAMPLE - Bristol Park (fake trees)\" as the current job? \"Job 2026-10-22 Escambia\" moves to Past jobs.",
+        "Delete \"Job 2026-10-22 Escambia\" and its 0 trees from this device? It was never exported. This cannot be undone."
+      ]
+    },
+    {
+      "name": "Past jobs now 2",
+      "pass": true
+    },
+    {
+      "name": "reopen past job: becomes current with 6 trees; blank job removed; other job stays past",
+      "pass": true,
+      "detail": [
+        [
+          2,
+          "SAMPLE - Bristol Park (fake trees)",
+          false
+        ],
+        [
+          3,
+          "Job 2026-10-22 Escambia",
+          true
+        ]
+      ]
+    },
+    {
+      "name": "delete past job",
+      "pass": true,
+      "detail": {
+        "dialogs": [
+          "Reopen \"SAMPLE - Bristol Park (fake trees)\" as the current job? \"Job 2026-10-22 Escambia\" moves to Past jobs.",
+          "Delete \"Job 2026-10-22 Escambia\" and its 0 trees from this device? It was never exported. This cannot be undone."
+        ],
+        "html": "<div class=\"small\">No past jobs yet.</div>"
+      }
+    },
+    {
+      "name": "restore goes into Past jobs (5 trees, cached parcel); current job unchanged",
+      "pass": true,
+      "detail": "SAMPLE - Bristol Park (fake trees) (restored)"
+    },
+    {
+      "name": "export a past job (.zip) without switching",
+      "pass": true,
+      "detail": {
+        "pz": "SAMPLE_-_Bristol_Park_fake_trees_restore_2026-10-22_all.zip",
+        "stat": "Downloaded: SAMPLE_-_Bristol_Park_fake_trees_restore_2026-10-22_all.zip"
+      }
+    },
+    {
+      "name": "report fetched + cached the parcel outline into job 1",
+      "pass": true
+    },
+    {
+      "name": "service worker active",
+      "pass": true
+    },
+    {
+      "name": "cache name zt-tree-inventory-v1.0.1 (only cache) with new libs",
+      "pass": true,
+      "detail": {
+        "keys": [
+          "zt-tree-inventory-v1.0.1"
+        ],
+        "n": 27,
+        "report": true,
+        "zip": true
+      }
+    },
+    {
+      "name": "offline reload works, job 1 open with 6 trees",
+      "pass": true
+    },
+    {
+      "name": "offline: capture + save",
+      "pass": true
+    },
+    {
+      "name": "offline: report PDF builds (cached parcel)",
+      "pass": true,
+      "detail": "Downloaded: SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_Tree_Inventory_Report.pdf"
+    },
+    {
+      "name": "migration: saved current job stays current, other open job -> Past jobs, opens on Capture",
+      "pass": true,
+      "detail": {
+        "cur": 2,
+        "open": [
+          2
+        ],
+        "tab": true
+      }
+    },
+    {
+      "name": "migration: without a saved current job, the most recently used becomes current; rest -> Past jobs",
+      "pass": true,
+      "detail": {
+        "cur": 7,
+        "open": [
+          7
+        ]
+      }
+    },
+    {
+      "name": "back on job 1 after migration checks",
+      "pass": true
+    },
+    {
+      "name": "field: no page errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "field: no console errors (offline network errors excluded)",
+      "pass": true,
+      "detail": [
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED ",
+        "Failed to load resource: net::ERR_INTERNET_DISCONNECTED "
+      ]
+    },
+    {
+      "name": "sketch @390x844 from job deep link (6 trees, cached parcel, letter)",
+      "pass": true,
+      "detail": {
+        "r": "1",
+        "page": "letter",
+        "bg": "Aerial: USGS imagery (NAIP), zoom 16, 1/1 tiles (Imagery: USGS The National Map / USDA NAIP (public domain))",
+        "t": "6 tree(s) from job \"SAMPLE - Bristol Park (fake trees)\" on this device.",
+        "p": "Using 1 cached parcel outline(s) saved with the job (retrieved 10/22/2026, 11:02:01 PM).",
+        "w": 2200
+      }
+    },
+    {
+      "name": "sketch background drawn (USGS)",
+      "pass": true,
+      "detail": "Aerial: USGS imagery (NAIP), zoom 16, 1/1 tiles (Imagery: USGS The National Map / USDA NAIP (public domain))"
+    },
+    {
+      "name": "sketch PDFs: letter 792x612 pt, 11x17 1224x792 pt",
+      "pass": true,
+      "detail": [
+        "Page size:       792 x 612 pts (letter)",
+        "Page size:       1224 x 792 pts"
+      ]
+    },
+    {
+      "name": "banned-wording scan: sketch page",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "sketch page offline renders with cached parcel",
+      "pass": true
+    },
+    {
+      "name": "sketch @iPhone: no page errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "parcel loads: City of Pensacola (Escambia REFNUM)",
+      "pass": true,
+      "detail": "Loaded 1 parcel(s) at 10/22/2026, 11:02:24 PM."
+    },
+    {
+      "name": "parcel loads: Escambia REFERENCE",
+      "pass": true,
+      "detail": "Loaded 1 parcel(s) at 10/22/2026, 11:02:25 PM."
+    },
+    {
+      "name": "parcel loads: Santa Rosa",
+      "pass": true,
+      "detail": "Loaded 1 parcel(s) at 10/22/2026, 11:02:27 PM."
+    },
+    {
+      "name": "parcel loads: Okaloosa",
+      "pass": true,
+      "detail": "Loaded 1 parcel(s) at 10/22/2026, 11:02:28 PM."
+    },
+    {
+      "name": "desktop: job JSON import renders 5 trees + cached parcel",
+      "pass": true
+    },
+    {
+      "name": "PNEZD inverse projection round-trips",
+      "pass": true,
+      "detail": [
+        [
+          "1000",
+          30.54534954,
+          -87.33307668
+        ],
+        [
+          "1001",
+          30.5454004,
+          -87.33322968
+        ],
+        [
+          "1002",
+          30.54545425,
+          -87.33339167
+        ],
+        [
+          "1003",
+          30.54550811,
+          -87.33355367
+        ],
+        [
+          "1004",
+          30.54555897,
+          -87.33370666
+        ]
+      ]
+    },
+    {
+      "name": "desktop: no page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "downloads": [
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1.csv",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_PNEZD_v1.0.1_NOTES.txt",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_Tree_Inventory_Report.pdf",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_all.zip",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_job_backup.json",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_photos.zip",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.csv",
+    "SAMPLE_-_Bristol_Park_fake_trees_2026-10-22_tree_log.xlsx"
+  ],
+  "report": {
+    "file": "sample/sample_Tree_Inventory_Report.pdf",
+    "pages": 6,
+    "bytes": 350104
+  },
+  "field": {
+    "page_errors": [],
+    "console_errors": []
+  },
+  "desktop": {
+    "City of Pensacola (Escambia REFNUM)": "Loaded 1 parcel(s) at 10/22/2026, 11:02:24 PM.",
+    "Escambia REFERENCE": "Loaded 1 parcel(s) at 10/22/2026, 11:02:25 PM.",
+    "Santa Rosa": "Loaded 1 parcel(s) at 10/22/2026, 11:02:27 PM.",
+    "Okaloosa": "Loaded 1 parcel(s) at 10/22/2026, 11:02:28 PM."
+  },
+  "failed": 0,
+  "passed": 118
+}

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>ZT Tree Inventory — Tree Inventory &amp; Data Collection | ZT, LLC</title>
+<meta name="description" content="Tree inventory, approximate GPS tree mapping, and protected-tree count worksheets across the Florida Panhandle. ZT, LLC.">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="cursor-ring" aria-hidden="true"></div>
+<header class="nav" id="top">
+  <a class="brand" href="#hero" aria-label="ZT Tree Inventory home"><img src="assets/mark.svg" alt="" width="28" height="28"><span>ZT <b>Tree Inventory</b></span></a>
+  <nav aria-label="Primary"><ul class="nav-links">
+    <li><a href="#services">Services</a></li><li><a href="#process">Process</a></li><li><a href="#deliverables">Deliverables</a></li><li><a href="#accuracy">Accuracy</a></li><li><a href="#area">Area</a></li><li><a href="#about">About</a></li>
+  </ul></nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light or dark theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+    <a class="btn btn-sm magnetic" href="#contact">Request a quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section id="hero" class="hero">
+  <canvas id="canopy" aria-hidden="true"></canvas>
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Pensacola · Escambia · Santa Rosa · Okaloosa</p>
+      <h1>Every tree on the lot.<br><span class="grad">Counted, tagged, mapped.</span></h1>
+      <p class="lede">Field tree inventories for builders, site teams, and landowners preparing for permits. Species, DBH, tag numbers, and approximate GPS locations — delivered as clean files your team can use the same day.</p>
+      <div class="hero-cta">
+        <a class="btn magnetic" href="#contact">Request a quote</a>
+        <a class="btn btn-ghost" href="#deliverables">See sample deliverables</a>
+      </div>
+      <p class="fine">Locations approximate. Not a survey. Tool, not engineering or surveying advice.</p>
+    </div>
+    <div class="hero-device reveal" style="--d:.15s">
+      <div class="gps-chip" role="status" aria-live="off"><span class="pulse"></span>GPS ± <b id="gpsFt">16</b> ft <em>approx.</em></div>
+      <div class="capture glass" id="capture">
+        <div class="cap-head"><span>Field capture</span><span class="cap-step" id="capStep">1 / 3</span></div>
+        <div class="cap-body" id="capBody"></div>
+        <div class="cap-dots" role="tablist" aria-label="Capture demo steps">
+          <button role="tab" aria-selected="true" data-i="0" aria-label="Step 1: species"></button>
+          <button role="tab" aria-selected="false" data-i="1" aria-label="Step 2: DBH"></button>
+          <button role="tab" aria-selected="false" data-i="2" aria-label="Step 3: tag and save"></button>
+        </div>
+        <button class="btn btn-block" id="capNext">Next →</button>
+        <p class="cap-note">Demo only — sample data.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap stats">
+    <div class="stat reveal"><b data-count="16" data-suffix=" ft">0</b><span>Typical phone GPS accuracy (GPS.gov range ~10–30 ft)</span></div>
+    <div class="stat reveal" style="--d:.1s"><b data-count="4">0</b><span>Deliverable formats: PDF, PNEZD CSV, XLSX, sketch</span></div>
+    <div class="stat reveal" style="--d:.2s"><b data-count="100" data-suffix="%">0</b><span>Offline-capable field app — no signal needed on site</span></div>
+    <div class="stat reveal" style="--d:.3s"><b data-count="2238" data-prefix="EPSG:">0</b><span>NAD83 Florida North (US ft) by default</span></div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">What we deliver</p><h2>Three services. Clearly scoped.</h2><p>Each one stops where licensed professional work begins. You always know what you're getting.</p></header>
+    <div class="cards">
+      <article class="card tilt reveal">
+        <div class="card-ico">◎</div><h3>Tree Inventory &amp; Data Collection</h3>
+        <p>Every qualifying tree logged with species, DBH, tag number, and field notes.</p>
+        <button class="more" aria-expanded="false">Details <i>+</i></button>
+        <div class="detail"><ul><li>Numbered aluminum tags set in the field</li><li>DBH measured at 4.5 ft</li><li>Photos per tree, optional</li><li>Tree log as XLSX and CSV</li></ul></div>
+      </article>
+      <article class="card tilt reveal" style="--d:.1s">
+        <div class="card-ico">⌖</div><h3>GPS Tree Mapping <small>(approximate — not a survey)</small></h3>
+        <p>Phone-GPS positions in Florida State Plane, ready to drop into CAD as reference points.</p>
+        <button class="more" aria-expanded="false">Details <i>+</i></button>
+        <div class="detail"><ul><li>PNEZD CSV for Civil 3D import</li><li>NAD83 / Florida North (US ft), EPSG:2238</li><li>Parcel sketch over public GIS lines</li><li>Your surveyor locates the tags for final plans</li></ul></div>
+      </article>
+      <article class="card tilt reveal" style="--d:.2s">
+        <div class="card-ico">∑</div><h3>Protected-Tree Count &amp; Mitigation Worksheet</h3>
+        <p>A tally of trees that may meet local protection thresholds, with a worksheet of potential replacement inches.</p>
+        <button class="more" aria-expanded="false">Details <i>+</i></button>
+        <div class="detail"><ul><li>Count by size class and species</li><li>References the local code section used</li><li>Worksheet for planning — the jurisdiction makes the final call</li><li>Not a tree protection plan</li></ul></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section alt">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">How it works</p><h2>Four steps, start to tags.</h2></header>
+    <div class="stepper reveal" id="stepper">
+      <div class="track"><div class="fill" id="stepFill"></div></div>
+      <ol>
+        <li><button data-s="0" class="on"><span>01</span>Request</button></li>
+        <li><button data-s="1"><span>02</span>Field inventory</button></li>
+        <li><button data-s="2"><span>03</span>Deliverables</button></li>
+        <li><button data-s="3"><span>04</span>Surveyor locates tags</button></li>
+      </ol>
+      <div class="step-panel glass" id="stepPanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="deliverables" class="section">
+  <div class="wrap">
+    <header class="sec-head reveal"><p class="eyebrow">Sample deliverables</p><h2>Files your team already uses.</h2></header>
+    <div class="deliv reveal">
+      <div class="deliv-tabs" role="tablist" aria-label="Deliverables">
+        <button role="tab" aria-selected="true" data-t="pdf">Report PDF</button>
+        <button role="tab" aria-selected="false" data-t="pnezd">PNEZD CSV</button>
+        <button role="tab" aria-selected="false" data-t="xlsx">Tree log XLSX</button>
+        <button role="tab" aria-selected="false" data-t="sketch">Parcel sketch</button>
+      </div>
+      <div class="deliv-panel glass" id="delivPanel" role="tabpanel"></div>
+    </div>
+  </div>
+</section>
+
+<section id="accuracy" class="section alt">
+  <div class="wrap acc">
+    <div class="reveal">
+      <p class="eyebrow">Accuracy &amp; limits</p><h2>Honest about what GPS can do.</h2>
+      <p>Phone GPS is typically good to about 10–30 ft under open sky, per GPS.gov. Tree canopy and buildings make it worse. That's fine for planning and counting. It is not fine for final site plans.</p>
+      <ul class="checks">
+        <li>Locations approximate, for field reference only.</li>
+        <li>Not survey grade. Your surveyor locates the tags.</li>
+        <li>Coordinates checked against NOAA NCAT transformations.</li>
+        <li>Tool, not engineering or surveying advice.</li>
+      </ul>
+    </div>
+    <div class="acc-viz reveal" style="--d:.15s" aria-label="Illustration of GPS accuracy radius">
+      <svg viewBox="0 0 300 300" role="img"><title>Approximate GPS accuracy circle around a tree</title>
+        <circle cx="150" cy="150" r="130" class="ring r3"/><circle cx="150" cy="150" r="85" class="ring r2"/><circle cx="150" cy="150" r="45" class="ring r1"/>
+        <circle cx="150" cy="150" r="7" class="dot"/>
+        <text x="150" y="30" text-anchor="middle">~30 ft</text><text x="150" y="75" text-anchor="middle">~20 ft</text><text x="150" y="115" text-anchor="middle">~10 ft</text>
+      </svg>
+      <label class="slider">Canopy cover <input type="range" id="canopyRange" min="0" max="100" value="30" aria-describedby="canopyOut"><output id="canopyOut">± 16 ft (illustrative)</output></label>
+    </div>
+  </div>
+</section>
+
+<section id="area" class="section">
+  <div class="wrap area">
+    <div class="reveal"><p class="eyebrow">Service area</p><h2>The Florida Panhandle.</h2>
+      <p>Familiar with local tree protection thresholds in Pensacola and the surrounding counties. Parcel lines pulled from each county's public GIS.</p>
+      <div class="chips"><span>Pensacola</span><span>Escambia County</span><span>Santa Rosa County</span><span>Okaloosa County</span></div>
+    </div>
+    <div class="map reveal" style="--d:.15s"><img src="assets/panhandle.svg" alt="Stylized map of the service area: Escambia, Santa Rosa, and Okaloosa counties"></div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="wrap about reveal">
+    <div class="avatar" aria-hidden="true">ZT</div>
+    <div><p class="eyebrow">About</p><h2>Zach Taylor, EI (Engineer Intern), ZT, LLC</h2>
+      <p>Five-plus years of civil site work in the Panhandle. I built ZT Tree Inventory because tree counts kept holding up permit packages. The field app runs offline, logs every tree, and exports straight to the formats site teams use.</p>
+      <p class="fine">ZT, LLC provides data collection services. It does not offer engineering, surveying, or landscape design services.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap contact">
+    <div class="reveal"><p class="eyebrow">Request a quote</p><h2>Tell me about the lot.</h2><p>Priced per job. Send the address and what the permit needs.</p>
+      <p class="contact-line">Contact via ZT, LLC · (850) 555-0199</p>
+      <p class="fine">Tool, not engineering or surveying advice. Locations approximate; not survey grade; your surveyor locates the tags. Phone GPS typically ~10–30 ft (GPS.gov).</p></div>
+    <form class="form glass reveal" id="quoteForm" style="--d:.1s" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Site address or parcel ID<input name="site" required></label>
+      <label>County<select name="county"><option>Escambia</option><option>Santa Rosa</option><option>Okaloosa</option><option>Not sure</option></select></label>
+      <label>What do you need?<textarea name="msg" rows="3"></textarea></label>
+      <button class="btn btn-block magnetic" type="submit">Send request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div><a class="brand" href="#hero"><img src="assets/mark.svg" alt="" width="24" height="24"><span>ZT <b>Tree Inventory</b></span></a><p>Zach Taylor, EI (Engineer Intern), ZT, LLC</p></div>
+    <p class="disc"><b>Tool, not engineering or surveying advice.</b> Locations approximate, for field reference only. Not a survey and not survey grade — the client's surveyor locates the tags. Phone GPS is typically ~10–30 ft (GPS.gov). Parcel lines from county public GIS, e.g. Escambia County IMAGiNE GIS.</p>
+    <p class="copy">© 2026 ZT, LLC · Mock site — not published</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>

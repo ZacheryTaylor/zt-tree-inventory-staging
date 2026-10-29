@@ -1,0 +1,134 @@
+{
+  "_note": "Parcel sources for the desktop sketch page. Copied from /workspace/products/parcel-filter/app/jurisdictions.json (read-only source of truth; re-sync when it changes) on 2026-10-17. Every field in idFields is queried, so users can type either ID format. See PLAN.md section 4.",
+  "syncedFrom": "/workspace/products/parcel-filter/app/jurisdictions.json",
+  "syncedAt": "2026-10-17 08:12 CT",
+  "jurisdictions": [
+    {
+      "id": "escambia",
+      "name": "Escambia County, FL",
+      "parcelLayerUrl": "https://gismaps.myescambia.com/arcgis/rest/services/Individual_Layers/parcels/FeatureServer/0",
+      "idFields": [
+        "REFNUM",
+        "REFERENCE"
+      ],
+      "idField": "REFNUM",
+      "idExample": "03-1S-31-1500-001-003 or 031S311500001003",
+      "labelFields": [
+        "REFNUM",
+        "REFERENCE",
+        "SITEADDR"
+      ],
+      "addressField": "SITEADDR",
+      "nativeWkid": 2883,
+      "defaultSketchCrs": "EPSG:2238",
+      "maxRecordCount": 1000,
+      "copyright": "Escambia County Property Appraiser (parcels); source acknowledgment: Escambia County IMAGiNE GIS",
+      "terms": "Primary use of assessment data is preparation of the current year tax roll; use for any other purpose is not warranted. Parcel information is NOT survey quality. County GIS: data is not a legal representation; conclusions are solely the user's responsibility; data in its original form shall not be sold for profit; acknowledge Escambia County IMAGiNE GIS as a source.",
+      "termsUrls": [
+        "https://escpa.org/default.aspx",
+        "https://www.escpa.org/MapMain.aspx",
+        "https://myescambia.com/docs/default-source/sharepoint-developmental-services/gis-fee-schedule.pdf"
+      ],
+      "freshness": [
+        {
+          "type": "stated",
+          "label": "Parcels",
+          "text": "Updated monthly (service description); exact date not exposed by the service"
+        }
+      ],
+      "verified": "2026-10-17",
+      "test": "Live test 2026-10-17: same geometry as Escambia_County/MapServer/0 for 031S311500001003 (0.0 deg max vertex diff), ~0.4 s, CORS '*'."
+    },
+    {
+      "id": "santa-rosa",
+      "name": "Santa Rosa County, FL",
+      "parcelLayerUrl": "https://cloud.santarosa.fl.gov/arcgis/rest/services/SRCAgencies/SRCAddressParcelData/MapServer/1",
+      "idFields": [
+        "Parcel"
+      ],
+      "idField": "Parcel",
+      "idExample": "34-2N-28-0570-00A00-0190",
+      "labelFields": [
+        "Parcel",
+        "Address"
+      ],
+      "addressField": "Address",
+      "nativeWkid": 3857,
+      "defaultSketchCrs": "EPSG:2238",
+      "maxRecordCount": 1800,
+      "copyright": "Santa Rosa County BOCC GIS (address/parcel service built from Property Appraiser parcels)",
+      "terms": "GIS maps and data are derived from sources considered dependable, but accuracy, completeness and currency are not guaranteed. The County makes no warranties as to accuracy, completeness, currency, reliability or suitability, assumes no liability, and no responsibility to maintain the data.",
+      "termsUrls": [
+        "https://www.santarosa.fl.gov/470/Mapping-GIS/"
+      ],
+      "freshness": [
+        {
+          "type": "portalItem",
+          "label": "Parcel service last modified",
+          "url": "https://cloud.santarosa.fl.gov/portal/sharing/rest/content/items/0623fbf2dba94e838088e84ca3140299",
+          "note": "item modified date; may not equal last data edit"
+        },
+        {
+          "type": "layerName",
+          "label": "Zoning layer version",
+          "url": "https://cloud.santarosa.fl.gov/arcgis/rest/services/ZONE_NoCity/MapServer/0"
+        }
+      ],
+      "verified": "2026-10-17",
+      "test": "Live test 2026-10-17: point query returned parcel, ~0.3 s, CORS origin echoed."
+    },
+    {
+      "id": "okaloosa",
+      "name": "Okaloosa County, FL",
+      "parcelLayerUrl": "https://okgis.myokaloosa.com/arcgis/rest/services/Land-Ownership/Parcels/MapServer/0",
+      "idFields": [
+        "PATPCL_PIN"
+      ],
+      "idField": "PATPCL_PIN",
+      "idExample": "18-3N-23-0000-0034-001B",
+      "labelFields": [
+        "PATPCL_PIN"
+      ],
+      "addressField": null,
+      "nativeWkid": 2238,
+      "defaultSketchCrs": "EPSG:2238",
+      "maxRecordCount": 1000,
+      "copyright": "Okaloosa County Property Appraiser (parcel attributes) and Okaloosa County GIS Department",
+      "terms": "Prepared for public appraisal purposes only; not intended for ownership conveyances or as survey data. GIS data provided as a public service 'as is', may be inaccurate or out of date; reliance is at the user's own risk. Property values are from the previous year certified tax roll.",
+      "termsUrls": [
+        "https://www.okaloosapa.com/gis-mapping/",
+        "https://gis.myokaloosa.com/gisdata/ftp_DataReadmefile.pdf"
+      ],
+      "freshness": [
+        {
+          "type": "maxDate",
+          "label": "Latest lot split recorded in data",
+          "url": "https://okgis.myokaloosa.com/arcgis/rest/services/Land-Ownership/Parcels/MapServer/0",
+          "field": "SPLIT_DT"
+        },
+        {
+          "type": "stated",
+          "label": "Stated cadence",
+          "text": "Property Appraiser GIS updated Monday mornings weekly; CAMA nightly (okaloosapa.com)"
+        }
+      ],
+      "verified": "2026-10-17",
+      "test": "Live test 2026-10-17: point query returned parcel, ~0.35 s, CORS '*'. Address field not mapped (PATPCL_ADDR1 meaning unverified)."
+    }
+  ],
+  "basemap": {
+    "type": "xyz",
+    "id": "usgs-imagery",
+    "label": "Aerial: USGS imagery (NAIP)",
+    "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
+    "maxZoom": 16,
+    "attribution": "Imagery: USGS The National Map / USDA NAIP (public domain)",
+    "license": "U.S. public domain (USGS; USDA aerial imagery)",
+    "licenseUrls": [
+      "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "https://www.fpacbc.usda.gov/geospatial-services/customer-services"
+    ],
+    "status": "Matches Parcel Filter's default basemap ('usgs-imagery') in /workspace/products/parcel-filter/app/jurisdictions.json (shared.basemaps, re-read 2026-10-17 08:12 CT). Re-sync if that default changes.",
+    "tested": "2026-10-17: z16 tiles 200 image/jpeg, CORS '*', ~0.1-0.3 s; z18 returns 404 (max native zoom 16, ~2 m/px)."
+  }
+}
