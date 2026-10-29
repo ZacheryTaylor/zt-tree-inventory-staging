@@ -35,13 +35,12 @@
     <div class="hero-copy reveal">
       <p class="eyebrow">Pensacola · Escambia · Santa Rosa · Okaloosa</p>
       <h1>Tagged. Logged.<br><span class="grad">Ready for your surveyor to locate.</span></h1>
-      <p class="lede">Tree tagging &amp; inventory data for builders, civil teams, and landowners. Every qualifying tree gets a numbered tag and an accurate field record — species, DBH, and notes. Approximate GPS points come along for illustration, so your surveyor or engineer can find and locate the tags for the sealed drawing.</p>
+      <p class="lede">Tree tagging &amp; inventory data for builders, civil teams, and landowners. Every qualifying tree gets a numbered tag and an accurate field record — species, DBH, and notes. Approximate GPS points help your surveyor find each tag.</p>
       <div class="hero-cta">
         <a class="btn magnetic" href="#contact">Request a quote</a>
         <a class="btn btn-ghost" href="#deliverables">See sample deliverables</a>
       </div>
-      <p class="fine">Tree data measured in the field. Locations approximate, for illustration — your surveyor locates the tags. Not a survey. Tool, not engineering or surveying advice.</p>
-    </div>
+          </div>
     <div class="hero-device reveal" style="--d:.15s">
       <div class="gps-chip" role="status" aria-live="off"><span class="pulse"></span>GPS ± <b id="gpsFt">16</b> ft <em>approx.</em></div>
       <div class="capture glass" id="capture">
@@ -79,7 +78,7 @@
         <div class="card-ico">⌖</div><h3>Approximate GPS Reference Points <small>(illustration — not a survey)</small></h3>
         <p>Phone-GPS positions in Florida State Plane so your crew can find each tag fast. For CAD reference and illustration only.</p>
         <button class="more" aria-expanded="false">Details <i>+</i></button>
-        <div class="detail"><ul><li>PNEZD CSV for Civil 3D import</li><li>NAD83 / Florida North (US ft), EPSG:2238</li><li>Parcel sketch over public GIS lines</li><li>Your surveyor locates the tags for the sealed drawing</li></ul></div>
+        <div class="detail"><ul><li>PNEZD CSV for Civil 3D import</li><li>NAD83 / Florida North (US ft), EPSG:2238</li><li>Parcel sketch over public GIS lines</li></ul></div>
       </article>
       <article class="card tilt reveal" style="--d:.2s">
         <div class="card-ico">∑</div><h3>Protected-Tree Count &amp; Mitigation Worksheet</h3>
@@ -136,9 +135,8 @@
       <p><b>Approximate — for illustration only:</b></p>
       <ul class="checks">
         <li>Phone GPS points, typically ~10–30 ft (GPS.gov); canopy makes it worse</li>
-        <li>Sketch positions. Locations approximate, for field reference only. Not a survey.</li>
-        <li>The tag on the tree is the reference — your surveyor locates the tags.</li>
-        <li>Tool, not engineering or surveying advice.</li>
+        <li>Sketch positions, for field reference only</li>
+        <li>Not a survey. The tag on the tree is the reference, and your surveyor locates the tags for the sealed drawing.</li>
       </ul>
     </div>
     <div class="acc-viz reveal" style="--d:.15s" aria-label="Illustration of GPS accuracy radius">
@@ -147,7 +145,7 @@
         <circle cx="150" cy="150" r="7" class="dot"/>
         <text x="150" y="30" text-anchor="middle">~30 ft</text><text x="150" y="75" text-anchor="middle">~20 ft</text><text x="150" y="115" text-anchor="middle">~10 ft</text>
       </svg>
-      <label class="slider">Canopy cover <input type="range" id="canopyRange" min="0" max="100" value="30" aria-describedby="canopyOut"><output id="canopyOut">± 16 ft (illustrative)</output></label>
+      <label class="slider">Drag: canopy cover over the tree <input type="range" id="canopyRange" min="0" max="100" value="30" aria-describedby="canopyOut"><output id="canopyOut">± 16 ft (illustrative)</output></label>
     </div>
   </div>
 </section>
@@ -165,20 +163,19 @@
 
 <section id="pricing" class="section">
   <div class="wrap">
-    <header class="sec-head reveal"><p class="eyebrow">Pricing</p><h2>Priced by the acre, by how wooded it is.</h2><p>Each estimate covers the full inventory package: tagging, accurate species, DBH, notes and photos, approximate GPS reference points, and the deliverable files.</p></header>
+    <header class="sec-head reveal"><p class="eyebrow">Pricing</p><h2>Priced per acre, based on how many trees are on it.</h2><p>These are <b>per-acre rate ranges, not flat fees.</b> Your estimate = lot acreage × the per-acre rate for your density band. Density means qualifying trees per acre (trees at or above the local size threshold). Every estimate includes the full inventory package.</p></header>
     <div class="cards price-cards">
-      <article class="card reveal"><p class="eyebrow">Light</p><h3>$250–350 <small>per acre · fewer than 50 trees/acre</small></h3></article>
-      <article class="card reveal" style="--d:.08s"><p class="eyebrow">Medium</p><h3>$350–750 <small>per acre · 50–150 trees/acre</small></h3></article>
-      <article class="card reveal" style="--d:.16s"><p class="eyebrow">Heavy</p><h3>$750–1,300 <small>per acre · 150–300+ trees/acre · +15% for heavy underbrush</small></h3></article>
+      <article class="card reveal"><p class="eyebrow">Light density · under 50 trees/acre</p><h3>$250–350 <small>per acre</small></h3><p class="fine">Example: 2 acres ≈ $500–700</p></article>
+      <article class="card reveal" style="--d:.08s"><p class="eyebrow">Medium density · 50–150 trees/acre</p><h3>$350–750 <small>per acre</small></h3><p class="fine">Example: 2 acres ≈ $700–1,500</p></article>
+      <article class="card reveal" style="--d:.16s"><p class="eyebrow">Heavy density · 150–300+ trees/acre</p><h3>$750–1,300 <small>per acre</small></h3><p class="fine">+15% if heavy underbrush. Example: 2 acres ≈ $1,500–2,600</p></article>
     </div>
-    <p class="price-min reveal"><b>Job minimum $450.</b></p>
-    <div class="glass addons reveal"><h3>Optional add-ons</h3><ul>
-      <li><span>Protected-tree / mitigation worksheet</span><b>$150 (≤100 trees) · $300 (over 100)</b></li>
-      <li><span>Rush delivery (≤3 business days)</span><b>+30%</b></li>
+    <p class="price-min reveal"><b>Job minimum $450.</b> Estimate until site walk: the final price depends on the acreage and tree density found on site, and is confirmed in writing before work starts.</p>
+    <div class="glass addons reveal"><h3>Optional add-ons <small>(only if you want them)</small></h3><ul>
+      <li><span>Protected-tree / mitigation worksheet</span><b>$150 (up to 100 trees) · $300 (over 100)</b></li>
+      <li><span>Rush delivery (within 3 business days)</span><b>+30% of the job</b></li>
       <li><span>Travel outside Escambia / Santa Rosa</span><b>$1/mi past 30 mi, or $100 flat</b></li>
-      <li><span>Revisit</span><b>$150 + site fee</b></li>
+      <li><span>Return visit</span><b>$150 + per-acre rate for new area</b></li>
     </ul></div>
-    <p class="fine reveal">Prices are estimates until the site walk confirms acreage and density. Not a survey, and not engineering or surveying advice. Inventory data is a tool for your licensed professionals.</p>
   </div>
 </section>
 
@@ -193,9 +190,9 @@
 
 <section id="contact" class="section">
   <div class="wrap contact">
-    <div class="reveal"><p class="eyebrow">Request a quote</p><h2>Tell me about the lot.</h2><p>Priced per job. Send the address and what the permit needs.</p>
+    <div class="reveal"><p class="eyebrow">Request a quote</p><h2>Tell me about the lot.</h2><p>Send the address or parcel ID, rough acreage, and what the permit needs. I reply with a per-acre estimate.</p>
       <p class="contact-line">Contact via ZT, LLC · <a href="mailto:ztllcmailbox@gmail.com">ztllcmailbox@gmail.com</a></p>
-      <p class="fine">Tool, not engineering or surveying advice. Locations approximate; not survey grade; your surveyor locates the tags. Phone GPS typically ~10–30 ft (GPS.gov).</p></div>
+      </div>
     <form class="form glass reveal" id="quoteForm" style="--d:.1s" novalidate>
       <label>Name<input name="name" required autocomplete="name"></label>
       <label>Email<input name="email" type="email" required autocomplete="email"></label>

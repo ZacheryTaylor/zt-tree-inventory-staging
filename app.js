@@ -30,12 +30,12 @@ const showCap=i=>{ci=i;cb.innerHTML=steps[i];cb.style.animation="none";cb.offset
 $("#capNext").addEventListener("click",()=>showCap((ci+1)%3));dots.forEach(d=>d.addEventListener("click",()=>showCap(+d.dataset.i)));showCap(0);
 // cards tilt + expand
 $$(".card").forEach(c=>{
- $(".more",c).addEventListener("click",e=>{const o=c.classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",o)});
+ const mo=$(".more",c);if(mo)mo.addEventListener("click",e=>{const o=c.classList.toggle("open");e.currentTarget.setAttribute("aria-expanded",o)});
  if(reduce||!finePtr)return;
  c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.transform=`perspective(800px) rotateX(${(0.5-y)*7}deg) rotateY(${(x-0.5)*9}deg)`;c.style.setProperty("--mx",x*100+"%");c.style.setProperty("--my",y*100+"%")});
  c.addEventListener("pointerleave",()=>c.style.transform="")});
 // stepper
-const sd=[["Request","Send the address or parcel ID and what the permit asks for. I confirm scope and a per-job price in writing."],["Tag & inventory","On site with the offline field app. Each qualifying tree gets a numbered tag, and its species, DBH, and notes are recorded as measured. An approximate GPS point is saved to help find the tag."],["Deliverables","Report PDF, Civil 3D PNEZD CSV + notes, tree log XLSX/CSV for the mitigation worksheet, and a parcel sketch. Tree data is accurate; locations are illustration only."],["Your surveyor locates the tags","Your survey crew locates my tags for definitive positions on the sealed drawing. The tag on the tree is the reference; my GPS points just get them there."]];
+const sd=[["Request","Send the address or parcel ID and what the permit asks for. I send a per-acre estimate in writing; it is confirmed after the site walk."],["Tag & inventory","On site with the offline field app. Each qualifying tree gets a numbered tag, and its species, DBH, and notes are recorded as measured. "],["Deliverables","Report PDF, Civil 3D PNEZD CSV, tree log XLSX/CSV, and a parcel sketch, delivered together."],["Your surveyor locates the tags","Your survey crew uses the tags to set final positions on the sealed drawing."]];
 const sb=$$("#stepper button"),sp=$("#stepPanel"),sf=$("#stepFill");
 const setStep=i=>{sb.forEach((b,j)=>b.classList.toggle("on",j<=i));sf.style.width=((i+1)/4*100)+"%";sp.innerHTML=`<h3>${sd[i][0]}</h3><p>${sd[i][1]}</p>`};
 sb.forEach(b=>{const i=+b.dataset.s;b.addEventListener("click",()=>setStep(i));b.addEventListener("mouseenter",()=>setStep(i));b.addEventListener("focus",()=>setStep(i))});setStep(0);
