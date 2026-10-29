@@ -7,6 +7,12 @@
 <meta name="description" content="Tree tagging and inventory data for Pensacola, Escambia, Santa Rosa, and Okaloosa: accurate species, DBH, and tag numbers, with approximate GPS for your surveyor to locate. ZT, LLC.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="ZT Tree Inventory">
+<meta property="og:title" content="ZT Tree Inventory — Tree Tagging &amp; Inventory Data">
+<meta property="og:description" content="Tree tagging and inventory data in Pensacola, Escambia, Santa Rosa, and Okaloosa. Accurate species, DBH, and tag numbers; priced per acre. ZT, LLC.">
+<meta property="og:image" content="https://zacherytaylor.github.io/zt-tree-inventory-staging/assets/apple-touch-icon.png">
+<meta property="og:url" content="https://zacherytaylor.github.io/zt-tree-inventory-staging/">
+<meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#16301F">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -183,7 +189,7 @@
   <div class="wrap about reveal">
     <div class="avatar" aria-hidden="true">ZT</div>
     <div><p class="eyebrow">About</p><h2>Zach Taylor, EI (Engineer Intern), ZT, LLC</h2>
-      <p>Five-plus years of civil site work in the Panhandle. I built ZT Tree Inventory because tree counts kept holding up permit packages. The field app runs offline, logs every tree, and exports straight to the formats site teams use.</p>
+      <p>I work in civil site development in the Panhandle and started ZT Tree Inventory because tree counts kept holding up permit packages. I tag and log every qualifying tree in the field and deliver the data in the formats site teams and surveyors already use.</p>
       <p class="fine">ZT Tree Inventory is a service line of ZT, LLC — not a separate company. ZT, LLC provides data collection services. It does not offer engineering, surveying, or landscape design services.</p></div>
   </div>
 </section>
@@ -191,15 +197,17 @@
 <section id="contact" class="section">
   <div class="wrap contact">
     <div class="reveal"><p class="eyebrow">Request a quote</p><h2>Tell me about the lot.</h2><p>Send the address or parcel ID, rough acreage, and what the permit needs. I reply with a per-acre estimate.</p>
-      <p class="contact-line">Contact via ZT, LLC · <a href="mailto:ztllcmailbox@gmail.com">ztllcmailbox@gmail.com</a></p>
+      <p class="contact-line">Contact via ZT, LLC · <a href="mailto:ztllcmailbox@gmail.com?subject=Tree%20inventory%20quote%20request">ztllcmailbox@gmail.com</a><br>Calls / texts about inventory jobs: <a href="tel:+18502611370">(850) 261-1370</a><br>Mail: 3525 Beagles Street, Pensacola, FL 32514</p>
       </div>
     <form class="form glass reveal" id="quoteForm" style="--d:.1s" novalidate>
       <label>Name<input name="name" required autocomplete="name"></label>
       <label>Email<input name="email" type="email" required autocomplete="email"></label>
       <label>Site address or parcel ID<input name="site" required></label>
       <label>County<select name="county"><option>City of Pensacola</option><option>Escambia</option><option>Santa Rosa</option><option>Okaloosa</option><option>Not sure</option></select></label>
+      <label>Approx. acreage (optional)<input name="acres" inputmode="decimal"></label>
       <label>What do you need?<textarea name="msg" rows="3"></textarea></label>
-      <button class="btn btn-block magnetic" type="submit">Send request</button>
+      <button class="btn btn-block magnetic" type="submit">Email my request</button>
+      <p class="fine">Opens your email app with your details filled in, addressed to ztllcmailbox@gmail.com. Just hit send.</p>
     </form>
   </div>
 </section>
@@ -209,7 +217,7 @@
   <div class="wrap foot">
     <div><a class="brand" href="#hero"><img src="assets/favicon.svg" alt="ZT Tree Inventory logo" width="30" height="30"><span>ZT <b>Tree Inventory</b></span></a><p>ZT Tree Inventory · by ZT, LLC</p><p>Zach Taylor, EI (Engineer Intern), ZT, LLC</p></div>
     <p class="disc"><b>Tool, not engineering or surveying advice.</b> Locations approximate, for field reference only. Not a survey and not survey grade — the client's surveyor locates the tags. Phone GPS is typically ~10–30 ft (GPS.gov). Parcel lines from county public GIS, e.g. Escambia County IMAGiNE GIS.</p>
-    <p class="copy">© 2026 ZT, LLC · ZT Tree Inventory is a service line of ZT, LLC · Staging mock — not published</p>
+    <p class="copy">© 2026 ZT, LLC · ZT Tree Inventory is a service line of ZT, LLC</p>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
