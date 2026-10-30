@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" font-family="system-ui,sans-serif">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2c5a41"/><stop offset="1" stop-color="#1a3527"/></linearGradient></defs>
-<rect width="400" height="260" fill="none"/>
-<path d="M0 200 Q120 215 200 205 T400 210 V260 H0Z" fill="#1d3a4a" opacity=".6"/>
-<path d="M20 20 L120 20 L118 190 L95 200 L60 185 L30 195 L22 120Z" fill="url(#g)" stroke="#9cc58a" stroke-width="1.5"/>
-<path d="M120 20 L230 20 L232 195 L170 198 L118 190Z" fill="url(#g)" stroke="#9cc58a" stroke-width="1.5" opacity=".9"/>
-<g fill="#e9e3d2" font-size="13" text-anchor="middle"><text x="70" y="100">Escambia</text><text x="175" y="100">Santa Rosa</text></g>
-<circle cx="88" cy="175" r="5" fill="#d9f0b5"/><text x="88" y="165" fill="#d9f0b5" font-size="11" text-anchor="middle">Pensacola</text>
-<text x="200" y="240" fill="#8fb3c4" font-size="11" text-anchor="middle" opacity=".8">Gulf of Mexico · stylized, not to scale</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Inter,system-ui,sans-serif" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a7050"/><stop offset="1" stop-color="#1f4030"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7f99"/><stop offset="1" stop-color="#1d4a5e"/></linearGradient></defs>
+<path d="M0 392 C90 402 150 376 210 384 C270 392 300 372 360 380 C450 392 520 374 600 386 C680 398 740 384 800 392 V520 H0Z" fill="url(#w)" opacity=".85"/>
+<path d="M60 40 H250 L246 300 C238 330 232 352 214 372 C196 382 176 376 160 384 C130 396 104 392 86 386 L70 330 C64 300 66 260 60 220 Z" fill="url(#g)" stroke="#bfe0a8" stroke-width="3" stroke-linejoin="round"/>
+<path d="M250 40 H470 L474 372 C430 380 400 372 360 380 C320 386 290 378 214 372 C232 352 238 330 246 300 Z" fill="url(#g)" stroke="#bfe0a8" stroke-width="3" stroke-linejoin="round" opacity=".92"/>
+<path d="M200 352 C230 344 262 340 290 344" fill="none" stroke="#7fb3c7" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+<g fill="#f4efe0" font-size="26" font-weight="600" text-anchor="middle"><text x="155" y="190">Escambia</text><text x="362" y="190">Santa Rosa</text></g>
+<circle cx="190" cy="340" r="9" fill="#e6f5c8" stroke="#16301f" stroke-width="3"/><text x="190" y="318" fill="#f4efe0" font-size="20" font-weight="600" text-anchor="middle">Pensacola</text>
+<text x="400" y="470" fill="#e8f2f6" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="2">GULF OF AMERICA</text>
+<text x="400" y="500" fill="#cfe2ea" font-size="15" text-anchor="middle">Stylized, not to scale</text>
 </svg>

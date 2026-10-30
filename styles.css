@@ -134,3 +134,24 @@ h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:600}h2{font-size:clamp(2rem,
 .price-cards h3{font-size:2rem}.price-cards h3 small{font-family:var(--font);font-size:.82rem}
 .price-min{margin:22px 0}.addons{padding:24px;margin-bottom:16px}.addons ul{list-style:none;margin:0;padding:0}
 .addons li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;padding:12px 0;border-top:1px solid var(--line)}.addons li span{color:var(--mute)}
+
+/* light-fix */
+[data-theme=light] .brand img{content:url(assets/mark-green.svg);filter:none;background:transparent;border-radius:0}
+[data-theme=light] .brand,[data-theme=light] .brand b{color:#2f5a3c}
+[data-theme=light] .opts span{color:#16301f;border-color:rgba(22,48,31,.35);background:#fff}
+[data-theme=light] .opts span.sel{background:#2f5a3c;color:#fff;border-color:#2f5a3c}
+[data-theme=light] .cap-head,[data-theme=light] .cap-body .k,[data-theme=light] .cap-note{color:#3d4a3f}
+[data-theme=light] .cap-dots button{background:rgba(22,48,31,.25)}
+[data-theme=light] .cap-dots button[aria-selected=true]{background:#2f5a3c}
+[data-theme=light] .deliv-tabs button{color:#16301f;border-color:rgba(22,48,31,.35);background:#fff}
+[data-theme=light] .deliv-tabs button[aria-selected=true]{background:#2f5a3c;color:#fff;border-color:#2f5a3c}
+.deliv-tabs button[aria-selected=true]{font-weight:600}
+.paper{background:#fff;color:#16301f;border:1px solid rgba(22,48,31,.18);padding:22px 24px;box-shadow:0 10px 30px -18px rgba(22,48,31,.45)}
+.paper h4{font-family:var(--serif);font-size:17px;margin:0 0 2px;color:#16301f}
+.paper small{display:block;color:#5a6656;font-size:11px;padding-bottom:10px;margin-bottom:10px;border-bottom:2px solid #2f5a3c}
+.paper table{font-size:12px}
+.paper th{color:#fff!important;background:#2f5a3c;padding:6px 10px}
+.paper td{padding:6px 10px;border-bottom:1px solid rgba(22,48,31,.12)!important;color:#16301f}
+.paper tr:nth-child(odd) td{background:#f4f1e8}
+.paper .stamp{display:block;margin-top:14px;font-size:10.5px;color:#5c4a28;border:1px solid #c9b48a;background:#fbf6ea;border-radius:6px;text-align:center}
+.map img{filter:drop-shadow(0 14px 28px rgba(0,0,0,.22))}
