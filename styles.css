@@ -167,7 +167,7 @@ h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:600}h2{font-size:clamp(2rem,
 .linkbtn{background:none;border:0;padding:0;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}
 .copy a{color:inherit}
 
-.map{background:transparent;border:0;padding:0}.map img,.map svg,.area-map{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line)}
+.map{background:transparent;border:0;padding:0}.map img{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line)}
 .area-map .m-bg{fill:var(--bg2)}
 .area-map .m-water{fill:color-mix(in srgb,var(--moss) 18%,var(--bg))}
 .area-map .m-co{fill:color-mix(in srgb,var(--moss) 28%,var(--bg2));stroke:var(--moss);stroke-width:1.25;stroke-linejoin:round}
