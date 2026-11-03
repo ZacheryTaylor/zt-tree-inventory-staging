@@ -154,7 +154,7 @@ h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:600}h2{font-size:clamp(2rem,
 .paper td{padding:6px 10px;border-bottom:1px solid rgba(22,48,31,.12)!important;color:#16301f}
 .paper tr:nth-child(odd) td{background:#f4f1e8}
 .paper .stamp{display:block;margin-top:14px;font-size:10.5px;color:#5c4a28;border:1px solid #c9b48a;background:#fbf6ea;border-radius:6px;text-align:center}
-.map img{filter:drop-shadow(0 14px 28px rgba(0,0,0,.22))}
+
 [data-theme=light] .btn-ghost{color:#16301f;background:#fff;border-color:rgba(22,48,31,.4)}
 
 .after-quote{margin:.6rem 0 0}
@@ -167,4 +167,4 @@ h1{font-size:clamp(2.6rem,7.5vw,4.8rem);font-weight:600}h2{font-size:clamp(2rem,
 .linkbtn{background:none;border:0;padding:0;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}
 .copy a{color:inherit}
 
-.map{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px}.map svg{display:block;width:100%;height:auto}.m-gulf{fill:var(--moss);opacity:.07}.m-co{fill:var(--moss);fill-opacity:.1;stroke:var(--moss);stroke-opacity:.35;stroke-width:1}.m-co2{fill-opacity:.16}.m-lbl{font-family:var(--serif);font-size:26px;font-weight:500;fill:var(--text);letter-spacing:.02em}.m-city{font-family:var(--font);font-size:13px;fill:var(--mute);letter-spacing:.04em}.m-dot{fill:var(--moss2)}.m-ring{fill:none;stroke:var(--moss);stroke-opacity:.4}.m-sea{font-family:var(--serif);font-style:italic;font-size:18px;fill:var(--mute)}.m-note{font-family:var(--font);font-size:10px;letter-spacing:.12em;text-transform:uppercase;fill:var(--mute);opacity:.7}
+.map{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:10px;overflow:hidden}.map img,.map svg{display:block;width:100%;height:auto;border-radius:10px}.m-gulf{fill:var(--moss);opacity:.07}.m-co{fill:var(--moss);fill-opacity:.1;stroke:var(--moss);stroke-opacity:.35;stroke-width:1}.m-co2{fill-opacity:.16}.m-lbl{font-family:var(--serif);font-size:26px;font-weight:500;fill:var(--text);letter-spacing:.02em}.m-city{font-family:var(--font);font-size:13px;fill:var(--mute);letter-spacing:.04em}.m-dot{fill:var(--moss2)}.m-ring{fill:none;stroke:var(--moss);stroke-opacity:.4}.m-sea{font-family:var(--serif);font-style:italic;font-size:18px;fill:var(--mute)}.m-note{font-family:var(--font);font-size:10px;letter-spacing:.12em;text-transform:uppercase;fill:var(--mute);opacity:.7}
