@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" role="img" aria-labelledby="mapT mapD">
-<title id="mapT">Florida Panhandle — Escambia &amp; Santa Rosa</title>
-<desc id="mapD">Geographic outline of Escambia and Santa Rosa counties in the Florida Panhandle, with Pensacola marked and Okaloosa shown for context, above the Gulf of America.</desc>
-<defs>
-  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#4a7a88" stop-opacity=".4"/>
-    <stop offset="1" stop-color="#1a3a44" stop-opacity=".65"/>
-  </linearGradient>
-  <filter id="soft" x="-5%" y="-5%" width="110%" height="110%">
-    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".25"/>
-  </filter>
-</defs>
-<rect width="920" height="540" rx="14" fill="#12261b"/>
-<path d="M0,0 L920,0 L920,64.8 L0,64.8 Z" fill="#1a2a22"/>
-<text x="24" y="36" fill="#6a7a6c" font-family="Inter, system-ui, sans-serif" font-size="13" letter-spacing="1.2">ALABAMA</text>
-<path d="M0,421.2 C184.0,399.6 414.0,442.8 644.0,410.4 S828.0,432.0 920,421.2 L920,540 L0,540 Z" fill="url(#sea)"/>
-<path d="M1089.3,364.9L1088.8,382.2L1087.8,403.8L1086.1,439.2L1083.5,439.0L1073.6,438.1L1058.9,437.4L1037.3,436.4L1036.1,436.4L1035.4,436.3L1023.6,435.8L1020.9,435.9L993.6,436.8L974.1,433.8L885.8,427.8L785.6,430.6L743.6,434.1L756.0,38.9L804.7,39.1L805.6,39.0L807.3,39.0L838.8,40.2L847.2,40.5L858.8,40.5L941.4,40.1L944.9,40.1L981.9,41.4L987.9,41.1L1034.3,40.9L1037.3,41.0L1079.7,40.8L1090.7,40.8L1093.5,40.7L1093.5,40.7L1089.3,364.9Z" fill="#24352c" stroke="#5a6a5c" stroke-width="1" opacity=".9"/>
-<g filter="url(#soft)">
-  <path d="M642.4,444.3L441.7,472.1L398.5,476.5L346.1,480.1L333.4,478.0L322.7,474.9L302.2,478.6L275.9,481.6L216.9,492.0L133.2,502.8L189.3,490.0L191.2,482.9L190.5,460.1L190.1,446.6L199.2,430.9L210.4,419.9L217.5,418.8L207.8,366.4L192.7,352.2L191.4,351.3L191.3,351.1L238.5,279.6L238.7,268.9L236.3,261.2L227.7,249.4L191.8,231.9L164.7,220.5L150.9,218.1L146.3,216.7L121.1,203.0L43.3,136.8L34.1,123.8L44.9,103.3L62.6,78.2L68.8,52.3L64.7,38.6L64.7,38.6L88.2,38.4L107.5,38.3L165.6,38.1L166.0,38.1L166.9,38.1L176.9,38.2L177.0,38.2L181.3,38.1L181.4,38.1L183.9,38.0L186.4,38.1L191.4,38.1L206.3,38.1L211.9,38.2L261.1,38.1L264.4,38.1L271.5,38.1L289.9,38.1L308.4,38.0L315.4,38.1L317.5,38.0L326.4,38.0L328.2,38.0L348.1,38.1L352.3,38.1L353.1,38.2L354.5,38.1L355.3,38.1L356.5,38.1L357.1,38.1L435.2,37.6L329.9,85.2L307.2,135.8L311.6,213.8L344.8,223.6L353.7,288.6L467.6,360.5L459.6,412.2L375.8,458.4L642.4,444.3Z" fill="#3d6a48" stroke="#c9d7a8" stroke-width="2.25"/>
-  <path d="M642.4,444.3L375.8,458.4L459.6,412.2L467.6,360.5L353.7,288.6L344.8,223.6L311.6,213.8L307.2,135.8L329.9,85.2L435.2,37.6L435.6,37.6L515.5,37.5L519.4,37.5L528.1,37.5L539.8,37.2L542.9,37.4L550.8,37.5L668.9,38.5L681.8,38.5L716.7,38.7L717.9,38.7L755.8,38.9L756.0,38.9L743.6,434.1L700.8,437.7L650.6,443.2L642.4,444.3Z" fill="#457852" stroke="#c9d7a8" stroke-width="2.25"/>
-</g>
-<text x="250.2" y="206.2" text-anchor="middle" fill="#efeadb" font-family="Georgia, 'Cormorant Garamond', serif" font-size="30" font-weight="600">Escambia</text>
-<text x="544.2" y="182.0" text-anchor="middle" fill="#efeadb" font-family="Georgia, 'Cormorant Garamond', serif" font-size="30" font-weight="600">Santa Rosa</text>
-<text x="977.1" y="237.1" text-anchor="middle" fill="#7a8a7c" font-family="Inter, system-ui, sans-serif" font-size="15">Okaloosa</text>
-<circle cx="389.4" cy="411.6" r="5.5" fill="#e4eccf" stroke="#12261b" stroke-width="2"/>
-<circle cx="389.4" cy="411.6" r="11" fill="none" stroke="#c9d7a8" stroke-opacity=".55" stroke-width="1.5"/>
-<text x="377.4" y="397.6" text-anchor="end" fill="#c9d7a8" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="500">Pensacola</text>
-<text x="460.0" y="500" text-anchor="middle" fill="#b7d0d8" font-family="Georgia, serif" font-style="italic" font-size="20">Gulf of America</text>
-<text x="460.0" y="522" text-anchor="middle" fill="#7a8a7c" font-family="Inter, system-ui, sans-serif" font-size="11" letter-spacing="1.6">FLORIDA PANHANDLE · SERVICE AREA HIGHLIGHTED</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d">
+<title id="t">Escambia and Santa Rosa Counties, Florida Panhandle</title>
+<desc id="d">Clean map of Escambia County and Santa Rosa County on the Florida Panhandle, with Pensacola marked.</desc>
+<rect width="800" height="480" fill="#12261b"/>
+<!-- gulf wash -->
+<path d="M0 336 C 200 317, 440 355, 800 326 L 800 480 L 0 480 Z" fill="#1a3840"/>
+<path d="M631.99,380.14L435.17,404.42L392.77,408.27L341.44,411.36L328.97,409.52L318.43,406.83L298.34,410.04L272.53,412.73L214.70,421.74L132.61,431.19L187.59,420.01L189.50,413.84L188.77,393.95L188.42,382.11L197.34,368.37L208.34,358.81L215.27,357.79L205.76,312.03L190.96,299.60L189.70,298.87L189.64,298.68L235.85,236.18L236.07,226.84L233.76,220.09L225.32,209.82L190.10,194.48L163.54,184.53L149.96,182.48L145.45,181.21L120.71,169.27L44.40,111.45L35.40,100.04L46.01,82.15L63.39,60.21L69.43,37.56L65.42,25.62L65.42,25.62L88.47,25.38L107.42,25.35L164.36,25.19L164.81,25.20L165.64,25.19L175.50,25.21L175.54,25.21L179.75,25.19L179.87,25.19L182.35,25.09L184.81,25.13L189.73,25.15L204.33,25.19L209.77,25.26L258.06,25.14L261.25,25.19L268.22,25.17L286.29,25.15L304.46,25.06L311.26,25.20L313.31,25.06L322.12,25.11L323.86,25.11L343.32,25.16L347.51,25.20L348.22,25.21L349.66,25.16L350.46,25.20L351.64,25.19L352.15,25.15L428.75,24.71L325.55,66.35L303.27,110.57L307.53,178.65L340.12,187.26L348.89,244.05L460.53,306.88L452.67,352.08L370.49,392.40L631.99,380.14Z" fill="#4a6f52" stroke="#c9d7a8" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M631.99,380.14L370.49,392.40L452.67,352.08L460.53,306.88L348.89,244.05L340.12,187.26L307.53,178.65L303.27,110.57L325.55,66.35L428.75,24.71L429.15,24.71L507.49,24.66L511.30,24.63L519.91,24.67L531.37,24.41L534.39,24.55L542.11,24.60L657.96,25.55L670.59,25.52L704.81,25.66L706.01,25.65L743.17,25.89L743.36,25.89L731.20,371.21L689.23,374.32L640.00,379.16L631.99,380.14Z" fill="#557a5c" stroke="#c9d7a8" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="247.3" y="172.0" text-anchor="middle" dominant-baseline="middle" fill="#efeadb" font-family="Georgia, serif" font-size="22">Escambia</text>
+<text x="535.7" y="150.9" text-anchor="middle" dominant-baseline="middle" fill="#efeadb" font-family="Georgia, serif" font-size="22">Santa Rosa</text>
+<circle cx="383.9" cy="351.5" r="4" fill="#e4eccf"/>
+<text x="373.9" y="341.5" text-anchor="end" fill="#c9d7a8" font-family="system-ui,sans-serif" font-size="13">Pensacola</text>
+<text x="400.0" y="452" text-anchor="middle" fill="#8fb0b8" font-family="Georgia, serif" font-style="italic" font-size="16">Gulf of America</text>
 </svg>
